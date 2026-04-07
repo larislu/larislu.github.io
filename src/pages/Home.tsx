@@ -69,8 +69,8 @@ const Home = () => {
             </span>
             <br />
             <span>
-              Outsie of work, I like to <Link to="/artwork">draw,</Link> play
-              video games, figure skate, or do aerial circus arts.
+              Outsie of work, I like to draw, play video games, figure skate, or
+              do aerial circus arts.
             </span>
             <br />
             <Social>

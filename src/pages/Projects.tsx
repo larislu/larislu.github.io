@@ -1,4 +1,7 @@
 import AIGenerator from "../projects/AIGenerator";
+import DarkMode from "../projects/DarkMode";
+import DemoCaptures from "../projects/DemoCaptures";
+import MBot from "../projects/MBot";
 import styled from "styled-components";
 
 const Page = styled.div`
@@ -43,7 +46,16 @@ const Projects = () => {
       <Card>
         <AIGenerator />
       </Card>
+      <Card>
+        <DarkMode />
+      </Card>
+      <Card>
+        <DemoCaptures />
+      </Card>
       <h2>other fun projects</h2>
+      <Card>
+        <MBot />
+      </Card>
     </Page>
   );
 };

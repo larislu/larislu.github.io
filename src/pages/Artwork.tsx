@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Furina from "../assets/furina.png";
-import Alhaitham from "../assets/alhaitham.png";
-import Woman from "../assets/woman.png";
-import Clouds from "../assets/clouds.png";
+import Furina from "../assets/furina.jpg";
+import Alhaitham from "../assets/alhaitham.jpg";
+import Woman from "../assets/woman.jpg";
+import Clouds from "../assets/clouds.jpg";
 import Stag from "../assets/stag.jpg";
 import Silksong from "../assets/silksong.jpg";
 
@@ -47,7 +47,7 @@ const Image = styled.img`
 `;
 
 // TODO:
-// - consider swapping to jpgs for smaller file size and faster loading
+// - swap to jpgs for smaller file size and faster loading
 // - have a overlay open with an enlarged image when clicked
 
 const Artwork = () => {

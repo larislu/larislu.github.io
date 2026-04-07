@@ -12,6 +12,9 @@ const Links = styled.ul`
   gap: 2em;
 `;
 
+// TODO
+// - refreshing on a non-root page 404s
+
 function App() {
   return (
     <BrowserRouter>
