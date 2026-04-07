@@ -92,6 +92,10 @@ const Resume = () => {
               research, design critique, to engineering handoff.
             </li>
           </List>
+          <span>
+            Skills: TypeScript, React, React Native, Figma, HTML/CSS, Firebase,
+            Git
+          </span>
         </Content>
       </Card>
       <Card>
@@ -136,6 +140,9 @@ const Resume = () => {
               collaborating with with UX designers, PMs, and other engineers.
             </li>
           </List>
+          <span>
+            Skills: TypeScript, JavaScript, React, HTML/CSS, Python, Git
+          </span>
         </Content>
       </Card>
       <Card>
@@ -144,7 +151,7 @@ const Resume = () => {
             Junior Software Engineer @ <a href="https://vantor.com/">Vantor</a>
           </Header>
           <span>
-            Works on spatial intelligence. Formerly known as Maxar Technologies.
+            Geospatial intelligence. Formerly known as Maxar Technologies.
           </span>
           <span>Aug 2018 - Dec 2020</span>
           <List>
@@ -162,6 +169,25 @@ const Resume = () => {
               project.
             </li>
           </List>
+          <span>Skills: C++, Python, Java, Vue, JavaScript</span>
+        </Content>
+      </Card>
+      <Card>
+        <Content>
+          <Header>
+            Global Data Insights and Analytics Intern @{" "}
+            <a href="https://www.ford.com">Ford</a>
+          </Header>
+          <Team>Ford Credit, Pricing Analytics Team</Team>
+          <span>May 2017 - Aug 2017</span>
+          <List>
+            <li>
+              Designed an interactive dashboard to visualize the effect of cash
+              incentives for the marketing team to gain a better understanding
+              of historical financing trends.
+            </li>
+          </List>
+          <span>Skills: QlikView, SAS (Statistical Analysis System)</span>
         </Content>
       </Card>
     </Page>

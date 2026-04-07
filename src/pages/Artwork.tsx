@@ -3,6 +3,8 @@ import Furina from "../assets/furina.png";
 import Alhaitham from "../assets/alhaitham.png";
 import Woman from "../assets/woman.png";
 import Clouds from "../assets/clouds.png";
+import Stag from "../assets/stag.jpg";
+import Silksong from "../assets/silksong.jpg";
 
 const Page = styled.div`
   padding: 1em;
@@ -31,6 +33,7 @@ const Header = styled.h2`
 const Row = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 1em;
   padding-inline: 1.5em;
   padding-bottom: 1em;
@@ -42,6 +45,10 @@ const Image = styled.img`
   object-fit: contain;
   min-width: 0;
 `;
+
+// TODO:
+// - consider swapping to jpgs for smaller file size and faster loading
+// - have a overlay open with an enlarged image when clicked
 
 const Artwork = () => {
   return (
@@ -60,6 +67,10 @@ const Artwork = () => {
             <Image src={Furina} />
           </Row>
           <Header>traditional art, sketchbook</Header>
+          <Row>
+            <Image src={Stag} />
+            <Image src={Silksong} />
+          </Row>
         </Content>
       </Background>
     </Page>
