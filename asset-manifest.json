@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.41d4b5c1.css",
-    "main.js": "/static/js/main.e76f7499.js",
-    "static/media/alhaitham.png": "/static/media/alhaitham.d9c6f939e18f62d620da.png",
-    "static/media/clouds.png": "/static/media/clouds.3046915f9b172efd2b69.png",
-    "static/media/woman.png": "/static/media/woman.e03cba1174bb601e7eaf.png",
-    "static/media/furina.png": "/static/media/furina.b31a332a804ffa09ed7c.png",
-    "static/media/profile-image.jpg": "/static/media/profile-image.cba52ced132464b4354a.jpg",
-    "static/media/silksong.jpg": "/static/media/silksong.7447f23e5e027454c979.jpg",
-    "static/media/stag.jpg": "/static/media/stag.62b2fbf1641f949727da.jpg",
+    "main.js": "/static/js/main.a3a52184.js",
+    "static/media/profile-image.jpg": "/static/media/profile-image.66672125a1c907d90a67.jpg",
+    "static/media/silksong.jpg": "/static/media/silksong.e8d89445ed25829b19b0.jpg",
+    "static/media/woman.jpg": "/static/media/woman.8fac5d79cbb27979196a.jpg",
+    "static/media/alhaitham.jpg": "/static/media/alhaitham.b5cfc2f2ca6c8d8d6875.jpg",
+    "static/media/stag.jpg": "/static/media/stag.3a4cfa8d904dfc0784c5.jpg",
+    "static/media/clouds.jpg": "/static/media/clouds.da3c5126c1cf2ab96306.jpg",
+    "static/media/furina.jpg": "/static/media/furina.45af966b3f68722abfb2.jpg",
     "index.html": "/index.html",
     "main.41d4b5c1.css.map": "/static/css/main.41d4b5c1.css.map",
-    "main.e76f7499.js.map": "/static/js/main.e76f7499.js.map"
+    "main.a3a52184.js.map": "/static/js/main.a3a52184.js.map"
   },
   "entrypoints": [
     "static/css/main.41d4b5c1.css",
-    "static/js/main.e76f7499.js"
+    "static/js/main.a3a52184.js"
   ]
 }
