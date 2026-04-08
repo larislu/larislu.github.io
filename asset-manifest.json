@@ -1,20 +1,27 @@
 {
   "files": {
     "main.css": "/static/css/main.41d4b5c1.css",
-    "main.js": "/static/js/main.a3a52184.js",
+    "main.js": "/static/js/main.3603b7a9.js",
+    "static/media/mbot-2.png": "/static/media/mbot-2.ce583bb3c611c94ef3db.png",
+    "static/media/mbot-1.png": "/static/media/mbot-1.c2c8c929b26d921a67b5.png",
     "static/media/profile-image.jpg": "/static/media/profile-image.66672125a1c907d90a67.jpg",
     "static/media/silksong.jpg": "/static/media/silksong.e8d89445ed25829b19b0.jpg",
     "static/media/woman.jpg": "/static/media/woman.8fac5d79cbb27979196a.jpg",
+    "static/media/demo-tooltip.png": "/static/media/demo-tooltip.e0f4889ca2da810f935b.png",
     "static/media/alhaitham.jpg": "/static/media/alhaitham.b5cfc2f2ca6c8d8d6875.jpg",
     "static/media/stag.jpg": "/static/media/stag.3a4cfa8d904dfc0784c5.jpg",
     "static/media/clouds.jpg": "/static/media/clouds.da3c5126c1cf2ab96306.jpg",
+    "static/media/model-generator-image.png": "/static/media/model-generator-image.1d33db6ae913269a8109.png",
     "static/media/furina.jpg": "/static/media/furina.45af966b3f68722abfb2.jpg",
+    "static/media/demo-library.png": "/static/media/demo-library.f63d57a35a8d5e8795b5.png",
+    "static/media/dark-mode-settings.png": "/static/media/dark-mode-settings.0a0d331a27c5a1def90b.png",
+    "static/media/dark-mode-tokens.png": "/static/media/dark-mode-tokens.77c8dc5f5bb903be78df.png",
     "index.html": "/index.html",
     "main.41d4b5c1.css.map": "/static/css/main.41d4b5c1.css.map",
-    "main.a3a52184.js.map": "/static/js/main.a3a52184.js.map"
+    "main.3603b7a9.js.map": "/static/js/main.3603b7a9.js.map"
   },
   "entrypoints": [
     "static/css/main.41d4b5c1.css",
-    "static/js/main.a3a52184.js"
+    "static/js/main.3603b7a9.js"
   ]
 }
