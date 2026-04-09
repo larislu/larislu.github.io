@@ -67,7 +67,7 @@ const ImageRow = styled.div`
   @media (min-width: 800px) {
     flex-direction: row;
     gap: 0;
-    max-width: 800px;
+    width: 800px;
   }
 `;
 
