@@ -1,48 +1,63 @@
 import styled from "styled-components";
-
-const Page = styled.div`
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.5em;
-`;
-
-const Card = styled.div`
-  background-color: #afd8de;
-  border-radius: 8px;
-  display: flex;
-  max-width: 100%;
-  margin-bottom: 2em;
-  max-width: 800px;
-`;
+import MBot1 from "../assets/projects/mbot-1.png";
+import MBot2 from "../assets/projects/mbot-2.png";
+import { RiArrowRightDoubleLine } from "@remixicon/react";
+import ProjectImages from "../components/ProjectImages";
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2em 1em;
+  gap: 1em;
 `;
 
-const Header = styled.h2`
+const Header = styled.h3`
   margin: 0;
 `;
 
-const Team = styled.h3`
-  margin-top: 1em;
-  margin-bottom: 0;
+const ImageRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+`;
+
+const Image = styled.img`
+  max-height: 400px;
+  object-fit: contain;
+  min-width: 0;
+`;
+
+const MoreInfo = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 2px;
 `;
 
 const MBot = () => {
   return (
-    <Content>
-      <Header>Operator Assistent MBot</Header>
-      <span>
-        As a senior capstone project, my team and I designed the software for a
-        robot that travels through hallways while avoiding obstacles and stops
-        at intersections to allow the user to select their next direction and
-        maneuver.
-      </span>
-    </Content>
+    <>
+      {/* <ImageRow>
+        <Image src={MBot1} />
+        <Image src={MBot2} />
+      </ImageRow> */}
+      <ProjectImages image1={MBot1} image2={MBot2} />
+      <Content>
+        <Header>Operator Assistent MBot</Header>
+        <span>
+          As a senior capstone project, my team and I designed the software for
+          a robot that travels through hallways while avoiding obstacles and
+          stops at intersections to allow the user to select their next
+          direction and maneuver.
+        </span>
+        <MoreInfo
+          href="https://www.youtube.com/watch?v=YuvRwL5f_TE"
+          target="_blank"
+        >
+          More info <RiArrowRightDoubleLine size={16} />
+        </MoreInfo>
+      </Content>
+    </>
   );
 };
 

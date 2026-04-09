@@ -1,3 +1,4 @@
+import NavBarSpacer from "../components/NavBarSpacer";
 import AIGenerator from "../projects/AIGenerator";
 import DarkMode from "../projects/DarkMode";
 import DemoCaptures from "../projects/DemoCaptures";
@@ -13,49 +14,56 @@ const Page = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: #afd8de;
+  background-color: rgba(175, 216, 222, 0.7);
   border-radius: 8px;
   display: flex;
-  max-width: 100%;
-  margin-bottom: 2em;
+  flex-direction: column;
   max-width: 800px;
 `;
 
-const Content = styled.div`
+const PolycamProjects = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2em 1em;
+  gap: 2em;
+  //width: 100%;
 `;
 
-const Header = styled.h2`
-  margin: 0;
+const OtherProjects = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 `;
 
-const Team = styled.h3`
-  margin-top: 1em;
-  margin-bottom: 0;
+const Footer = styled.div`
+  font-size: 14px;
 `;
 
-// TODO
-// - figure out how to get gifs?
 const Projects = () => {
   return (
     <Page>
-      <h1>my projects.</h1>
+      <NavBarSpacer />
+      <h1>my project portfolio.</h1>
       <h2>polycam design projects</h2>
-      <Card>
-        <AIGenerator />
-      </Card>
-      <Card>
-        <DarkMode />
-      </Card>
-      <Card>
-        <DemoCaptures />
-      </Card>
+      <PolycamProjects>
+        <Card>
+          <AIGenerator />
+        </Card>
+        <Card>
+          <DarkMode />
+        </Card>
+        <Card>
+          <DemoCaptures />
+        </Card>
+      </PolycamProjects>
       <h2>other fun projects</h2>
-      <Card>
-        <MBot />
-      </Card>
+      <OtherProjects>
+        <Card>
+          <MBot />
+        </Card>
+        <Footer>
+          {`also one of my projects is creating this website from scratch :)`}{" "}
+        </Footer>
+      </OtherProjects>
     </Page>
   );
 };

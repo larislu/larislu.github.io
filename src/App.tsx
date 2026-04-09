@@ -1,40 +1,19 @@
 import React from "react";
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Artwork from "./pages/Artwork";
-import styled from "styled-components";
-
-const Links = styled.ul`
-  font-size: 18px;
-  display: flex;
-  gap: 2em;
-`;
+import NavBar from "./components/NavBar";
 
 // TODO
 // - refreshing on a non-root page 404s
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
-        <nav>
-          <Links>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/artwork">Artwork</Link>
-            </li>
-          </Links>
-        </nav>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
@@ -42,7 +21,7 @@ function App() {
           <Route path="/artwork" element={<Artwork />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

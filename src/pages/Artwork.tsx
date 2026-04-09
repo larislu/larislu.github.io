@@ -1,4 +1,6 @@
+import NavBarSpacer from "../components/NavBarSpacer";
 import styled from "styled-components";
+
 import Furina from "../assets/furina.jpg";
 import Alhaitham from "../assets/alhaitham.jpg";
 import Woman from "../assets/woman.jpg";
@@ -14,7 +16,7 @@ const Page = styled.div`
 `;
 
 const Background = styled.div`
-  background-color: #afd8de;
+  background-color: rgba(175, 216, 222, 0.7);
   border-radius: 8px;
   display: flex;
   max-width: 100%;
@@ -27,7 +29,7 @@ const Content = styled.div`
 `;
 
 const Header = styled.h2`
-  margin: 1em;
+  align-self: center;
 `;
 
 const Row = styled.div`
@@ -35,7 +37,7 @@ const Row = styled.div`
   flex-direction: row;
   justify-content: space-between;
   gap: 1em;
-  padding-inline: 1.5em;
+  padding-inline: 1em;
   padding-bottom: 1em;
 `;
 
@@ -53,6 +55,7 @@ const Image = styled.img`
 const Artwork = () => {
   return (
     <Page>
+      <NavBarSpacer />
       <h1>sometimes i like to draw.</h1>
       <Background>
         <Content>

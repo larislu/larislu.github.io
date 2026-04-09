@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import DarkModeTokens from "../assets/projects/dark-mode-tokens.png";
+import DarkModeSettings from "../assets/projects/dark-mode-settings.png";
+import ProjectImages from "../components/ProjectImages";
 
 const Page = styled.div`
   padding: 1em;
@@ -9,7 +12,7 @@ const Page = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: #afd8de;
+  background-color: rgba(175, 216, 222, 0.7);
   border-radius: 8px;
   display: flex;
   max-width: 100%;
@@ -23,21 +26,23 @@ const Content = styled.div`
   padding: 2em 1em;
 `;
 
-const Header = styled.h2`
-  margin: 0;
-`;
-
-const Team = styled.h3`
-  margin-top: 1em;
-  margin-bottom: 0;
+const Header = styled.h3`
+  margin-top: 0;
 `;
 
 const DarkMode = () => {
   return (
-    <Content>
-      <Header>Polycam Dark Mode</Header>
-      <span>lorem ipsum</span>
-    </Content>
+    <>
+      <ProjectImages image1={DarkModeTokens} image2={DarkModeSettings} />
+      <Content>
+        <Header>Polycam Dark Mode</Header>
+        <span>
+          I led the engineering effort for dark mode and a new re-branded color
+          scheme to cement the app as a professional enterprise tool. I
+          advocated for visual accessibility guidelines with color contrast.
+        </span>
+      </Content>
+    </>
   );
 };
 

@@ -1,3 +1,4 @@
+import NavBarSpacer from "../components/NavBarSpacer";
 import styled from "styled-components";
 
 const Page = styled.div`
@@ -6,15 +7,22 @@ const Page = styled.div`
   flex-direction: column;
   align-items: center;
   line-height: 1.5em;
+  gap: 1em;
+`;
+
+const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Card = styled.div`
-  background-color: #afd8de;
+  background-color: rgba(175, 216, 222, 0.7);
   border-radius: 8px;
   display: flex;
   max-width: 100%;
-  margin-bottom: 2em;
   max-width: 800px;
+  margin-bottom: 1em;
 `;
 
 const Content = styled.div`
@@ -44,11 +52,13 @@ const List = styled.ul`
 const Resume = () => {
   return (
     <Page>
-      <h1>my resume.</h1>
-      <a href="https://drive.google.com/file/d/1avoHSKhThTpLQ0XrF4eckQkO8QgYmu39/view?usp=sharing">
-        View as PDF
-      </a>
-      <br />
+      <NavBarSpacer />
+      <Title>
+        <h1>my resume.</h1>
+        <a href="https://drive.google.com/file/d/1avoHSKhThTpLQ0XrF4eckQkO8QgYmu39/view?usp=sharing">
+          View as PDF
+        </a>
+      </Title>
       <Card>
         <Content>
           <Header>
