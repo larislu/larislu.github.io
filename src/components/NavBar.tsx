@@ -14,13 +14,17 @@ const Links = styled.ul`
   top: 0;
   font-size: 18px;
   display: flex;
-  gap: 2em;
+  gap: 16px;
   list-style-type: none;
   justify-content: center;
-  padding: 18px 0;
+  padding: 0;
   margin-block: 0;
   background-color: #ebf8fa;
   z-index: 10;
+
+  @media (min-width: 380px) {
+    gap: 28px;
+  }
 `;
 
 // const Gradient = styled.div`
@@ -33,13 +37,20 @@ const Links = styled.ul`
 
 const NavButton = styled(Link)`
   display: flex;
-  gap: 0.5em;
+  flex-direction: column;
+  gap: 6px;
+  padding-block: 18px;
+  align-items: center;
+
+  @media (min-width: 510px) {
+    flex-direction: row;
+  }
 `;
 
-// TODO
+const enum // TODO
 // - refreshing on a non-root page 404s
 
-enum Page {
+Page {
   home = "home",
   resume = "resume",
   projects = "projects",

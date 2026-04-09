@@ -30,17 +30,32 @@ const Header = styled.h3`
   margin-top: 0;
 `;
 
+const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+`;
+
 const DarkMode = () => {
   return (
     <>
       <ProjectImages image1={DarkModeTokens} image2={DarkModeSettings} />
       <Content>
         <Header>Polycam Dark Mode</Header>
-        <span>
-          I led the engineering effort for dark mode and a new re-branded color
-          scheme to cement the app as a professional enterprise tool. I
-          advocated for visual accessibility guidelines with color contrast.
-        </span>
+        <Text>
+          <span>
+            I led the engineering effort for dark mode and a new re-branded
+            color scheme to cement the app as a professional enterprise tool.
+            Dark mode is ubiquitous in apps, and yet we didn't have an option
+            for it. The app now defaults to the system setting, with the ability
+            to override.
+          </span>
+          <span>
+            I advocated for visual accessibility guidelines with color contrast,
+            making sure everything is accessible in both light mode and dark
+            mode.
+          </span>
+        </Text>
       </Content>
     </>
   );

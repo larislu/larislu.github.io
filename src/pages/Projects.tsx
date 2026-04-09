@@ -4,6 +4,7 @@ import DarkMode from "../projects/DarkMode";
 import DemoCaptures from "../projects/DemoCaptures";
 import MBot from "../projects/MBot";
 import styled from "styled-components";
+import { RiGithubLine, RiLinkedinBoxFill, RiMailFill } from "@remixicon/react";
 
 const Page = styled.div`
   padding: 1em;
@@ -11,6 +12,7 @@ const Page = styled.div`
   flex-direction: column;
   align-items: center;
   line-height: 1.5em;
+  text-align: center;
 `;
 
 const Card = styled.div`
@@ -19,23 +21,33 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 800px;
+  text-align: start;
 `;
 
 const PolycamProjects = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2em;
-  //width: 100%;
 `;
 
 const OtherProjects = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1em;
 `;
 
 const Footer = styled.div`
   font-size: 14px;
+  line-height: 18px;
+  text-align: start;
+  max-width: 800px;
+`;
+
+const Github = styled.a`
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 `;
 
 const Projects = () => {
@@ -61,7 +73,11 @@ const Projects = () => {
           <MBot />
         </Card>
         <Footer>
-          {`also one of my projects is creating this website from scratch :)`}{" "}
+          {`(Also, one of my projects is creating this website from scratch! This page has a different experience on desktop vs mobile. Check it out if you're curious!)`}{" "}
+          <Github href="https://github.com/larislu/larislu.github.io">
+            <RiGithubLine size={18} />
+            GitHub
+          </Github>
         </Footer>
       </OtherProjects>
     </Page>

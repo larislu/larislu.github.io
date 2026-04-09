@@ -52,10 +52,13 @@ const List = styled.ul`
 const Resume = () => {
   return (
     <Page>
-      <NavBarSpacer />
       <Title>
+        <NavBarSpacer />
         <h1>my resume.</h1>
-        <a href="https://drive.google.com/file/d/1avoHSKhThTpLQ0XrF4eckQkO8QgYmu39/view?usp=sharing">
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1avoHSKhThTpLQ0XrF4eckQkO8QgYmu39/view?usp=sharing"
+        >
           View as PDF
         </a>
       </Title>

@@ -17,6 +17,10 @@ body {
   background-color: #ebf8fa;
 }
 
+h1 {
+  line-height: 40px;
+}
+
 h1,
 h2,
 h3 {
