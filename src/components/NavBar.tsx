@@ -25,6 +25,10 @@ const Links = styled.ul`
   @media (min-width: 380px) {
     gap: 28px;
   }
+
+  @media print {
+    display: none;
+  }
 `;
 
 // const Gradient = styled.div`

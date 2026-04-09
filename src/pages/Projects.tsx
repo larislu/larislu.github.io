@@ -41,6 +41,12 @@ const Footer = styled.div`
   line-height: 18px;
   text-align: start;
   max-width: 800px;
+
+  @media print {
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+  }
 `;
 
 const Github = styled.a`
@@ -50,11 +56,22 @@ const Github = styled.a`
   gap: 4px;
 `;
 
+const PrintOnly = styled.div`
+  display: none;
+  @media print {
+    display: block;
+  }
+`;
+
 const Projects = () => {
   return (
     <Page>
       <NavBarSpacer />
       <h1>my project portfolio.</h1>
+      <PrintOnly>
+        (This is a printed PDF copy. My portfolio is best viewed as a website,
+        larislu.github.io)
+      </PrintOnly>
       <h2>polycam design projects</h2>
       <PolycamProjects>
         <Card>

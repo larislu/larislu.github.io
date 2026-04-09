@@ -56,3 +56,10 @@ span {
   font-style: normal;
   cursor: default;
 }
+
+@media print {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

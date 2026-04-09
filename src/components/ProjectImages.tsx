@@ -42,6 +42,11 @@ const ImageRow = styled.div`
     gap: 0;
     width: 800px;
   }
+
+  @media print {
+    width: 800px;
+    display: block;
+  }
 `;
 
 const Image = styled.img`
@@ -51,6 +56,10 @@ const Image = styled.img`
 
   @media (min-width: 800px) {
     max-height: 400px;
+  }
+
+  @media print {
+    width: 400px;
   }
 `;
 

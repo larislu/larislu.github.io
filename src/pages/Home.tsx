@@ -117,10 +117,10 @@ const Home = () => {
               </div>
               <h2>About Me</h2>
               <span>
-                I'm a Seattle-based software engineer that likes to sit in the
-                center of the Venn diagram between engineering and design. My
-                passion is for making accessible products with an effortless
-                user experience, regardless of complexity under the surface.
+                I sit in the center of the Venn diagram between engineering and
+                design. My passion is for making accessible products with an
+                effortless user experience, regardless of complexity under the
+                surface.
               </span>
             </div>
             <span>

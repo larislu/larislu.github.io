@@ -25,29 +25,17 @@ const Text = styled.div`
   gap: 1em;
 `;
 
-// const ImageRow = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   border-radius: 8px 8px 0 0;
-//   overflow: hidden;
-// `;
-
-// const Image = styled.img`
-//   max-height: 400px;
-//   object-fit: contain;
-//   min-width: 0;
-// `;
-
 const Video = styled.video`
-  // max-height: 400px;
-  // object-fit: contain;
-  // min-width: 0;
   width: 100%;
   object-fit: contain;
   min-width: 0;
 
   @media (min-width: 800px) {
     max-height: 400px;
+  }
+
+  @media print {
+    width: 400px;
   }
 `;
 
@@ -69,6 +57,11 @@ const ImageRow = styled.div`
     gap: 0;
     width: 800px;
   }
+
+  @media print {
+    width: 800px;
+    display: block;
+  }
 `;
 
 const Image = styled.img`
@@ -78,6 +71,10 @@ const Image = styled.img`
 
   @media (min-width: 800px) {
     max-height: 400px;
+  }
+
+  @media print {
+    width: 400px;
   }
 `;
 
