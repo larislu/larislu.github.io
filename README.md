@@ -9,8 +9,9 @@ TODOS:
 - [ ] the video in the projects is getting a little distracting, either disable autoplay as short term solution and hide in a collapsible section as a long term solution
 - [ ] expand on metrics for ai generator (what does it mean?)
 - [ ] get metrics for how many people force switched back to light mode
-- [ ] dark mode? styled might work nicely with this if i have a colors constant file
+- [ ] dark mode?
 - [ ] learn more about typography
 - [ ] add artistic frame around profile picture?
 - [ ] display artwork as vertical on mobile
 - [ ] create jump to in resume
+- [ ] add shadow to cards
