@@ -8,21 +8,12 @@ import {
 } from "@remixicon/react";
 import ModelGeneratorImage from "../assets/projects/model-generator-image.png";
 import { useFullWindow } from "../components/ProjectImages";
+import styles from "./projects.module.css";
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2em 1em;
-`;
-
-const Header = styled.h3`
-  margin-top: 0;
-`;
-
-const Text = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
 `;
 
 const Video = styled.video`
@@ -102,13 +93,7 @@ const AIGenerator = () => {
       <EmblaViewport>
         <EmblaContainer>
           <EmblaSlide>
-            <Video
-              src="/videos/model-generator-vid.mp4"
-              autoPlay
-              loop
-              muted
-              controls
-            />
+            <Video src="/videos/model-generator-vid.mp4" loop muted controls />
           </EmblaSlide>
         </EmblaContainer>
       </EmblaViewport>
@@ -121,21 +106,15 @@ const AIGenerator = () => {
         <ImageRow>
           <>
             <Image src={ModelGeneratorImage} />
-            <Video
-              src="/videos/model-generator-vid.mp4"
-              autoPlay
-              loop
-              muted
-              controls
-            />
+            <Video src="/videos/model-generator-vid.mp4" loop muted controls />
           </>
         </ImageRow>
       ) : (
         miniEmbla
       )}
       <Content>
-        <Header>AI 3D Model Generator in Scenes</Header>
-        <Text>
+        <h3 className={styles.header}>AI 3D Model Generator in Scenes</h3>
+        <div className={styles.text}>
           <span>
             I designed the integration of Polycam's AI Model Generator within
             the Scenes feature. Scenes allow users to combine multiple 3D
@@ -147,7 +126,7 @@ const AIGenerator = () => {
           <span>
             This led to a consistent 37.15% increase in 3D generator usage.
           </span>
-        </Text>
+        </div>
       </Content>
     </>
   );

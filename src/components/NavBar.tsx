@@ -51,10 +51,7 @@ const NavButton = styled(Link)`
   }
 `;
 
-const enum // TODO
-// - refreshing on a non-root page 404s
-
-Page {
+const enum Page {
   home = "home",
   resume = "resume",
   projects = "projects",
