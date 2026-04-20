@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.50491099.css",
-    "main.js": "/static/js/main.c7d50956.js",
+    "main.css": "/static/css/main.8f51a31a.css",
+    "main.js": "/static/js/main.2deb878a.js",
     "static/media/mbot-2.png": "/static/media/mbot-2.ce583bb3c611c94ef3db.png",
     "static/media/mbot-1.png": "/static/media/mbot-1.c2c8c929b26d921a67b5.png",
-    "static/media/profile-image.jpg": "/static/media/profile-image.66672125a1c907d90a67.jpg",
     "static/media/silksong.jpg": "/static/media/silksong.e8d89445ed25829b19b0.jpg",
+    "static/media/hanfu.png": "/static/media/hanfu.d82078c58029d20f0d4f.png",
     "static/media/woman.jpg": "/static/media/woman.8fac5d79cbb27979196a.jpg",
     "static/media/demo-tooltip.png": "/static/media/demo-tooltip.e0f4889ca2da810f935b.png",
     "static/media/alhaitham.jpg": "/static/media/alhaitham.b5cfc2f2ca6c8d8d6875.jpg",
@@ -17,11 +17,11 @@
     "static/media/dark-mode-settings.png": "/static/media/dark-mode-settings.0a0d331a27c5a1def90b.png",
     "static/media/dark-mode-tokens.png": "/static/media/dark-mode-tokens.77c8dc5f5bb903be78df.png",
     "index.html": "/index.html",
-    "main.50491099.css.map": "/static/css/main.50491099.css.map",
-    "main.c7d50956.js.map": "/static/js/main.c7d50956.js.map"
+    "main.8f51a31a.css.map": "/static/css/main.8f51a31a.css.map",
+    "main.2deb878a.js.map": "/static/js/main.2deb878a.js.map"
   },
   "entrypoints": [
-    "static/css/main.50491099.css",
-    "static/js/main.c7d50956.js"
+    "static/css/main.8f51a31a.css",
+    "static/js/main.2deb878a.js"
   ]
 }
