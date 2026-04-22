@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1323f630.css",
-    "main.js": "/static/js/main.555da5a8.js",
+    "main.js": "/static/js/main.6001786c.js",
     "static/media/mbot-2.png": "/static/media/mbot-2.ce583bb3c611c94ef3db.png",
     "static/media/mbot-1.png": "/static/media/mbot-1.c2c8c929b26d921a67b5.png",
     "static/media/silksong.jpg": "/static/media/silksong.e8d89445ed25829b19b0.jpg",
@@ -18,10 +18,10 @@
     "static/media/dark-mode-tokens.png": "/static/media/dark-mode-tokens.77c8dc5f5bb903be78df.png",
     "index.html": "/index.html",
     "main.1323f630.css.map": "/static/css/main.1323f630.css.map",
-    "main.555da5a8.js.map": "/static/js/main.555da5a8.js.map"
+    "main.6001786c.js.map": "/static/js/main.6001786c.js.map"
   },
   "entrypoints": [
     "static/css/main.1323f630.css",
-    "static/js/main.555da5a8.js"
+    "static/js/main.6001786c.js"
   ]
 }
