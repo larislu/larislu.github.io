@@ -15,10 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ebf8fa;
-}
-
-h1 {
-  line-height: 40px;
+  line-height: 1.3em;
 }
 
 h1,
@@ -44,9 +41,6 @@ a {
   &:hover {
     color: #346269;
   }
-  &:active {
-    text-decoration: none;
-  }
 }
 
 div,
@@ -55,6 +49,7 @@ span {
   font-weight: 450;
   font-style: normal;
   cursor: default;
+  letter-spacing: 0.02em;
 }
 
 @media print {

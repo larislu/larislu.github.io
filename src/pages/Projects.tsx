@@ -11,7 +11,7 @@ const Page = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.5em;
+  line-height: 1.45em;
   text-align: center;
 `;
 
@@ -22,6 +22,12 @@ const Card = styled.div`
   flex-direction: column;
   max-width: 800px;
   text-align: start;
+
+  @media print {
+    width: 730px;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
 `;
 
 const PolycamProjects = styled.div`
@@ -43,14 +49,14 @@ const Footer = styled.div`
   max-width: 800px;
 
   @media print {
-    width: 750px;
+    width: 725px;
     display: block;
     margin: 0 auto;
   }
 `;
 
 const Github = styled.a`
-  padding-top: 4px;
+  padding: 6px 0;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -60,6 +66,8 @@ const PrintOnly = styled.div`
   display: none;
   @media print {
     display: block;
+    width: 725px;
+    text-align: start;
   }
 `;
 
@@ -69,8 +77,8 @@ const Projects = () => {
       <NavBarSpacer />
       <h1>my project portfolio.</h1>
       <PrintOnly>
-        (This is a printed PDF copy. My portfolio is best viewed as a website,
-        larislu.github.io)
+        This is a printed PDF copy of this page. My portfolio is best viewed
+        as an website at larislu.github.io
       </PrintOnly>
       <h2>polycam design projects</h2>
       <PolycamProjects>
@@ -90,7 +98,7 @@ const Projects = () => {
           <MBot />
         </Card>
         <Footer>
-          {`(Also, one of my projects is creating this website from scratch! This page has a different experience on desktop vs mobile. Check it out if you're curious!)`}{" "}
+          {`(Also, one of my projects is creating this website from scratch! This page has a different experience on desktop vs mobile. It's also printable as a PDF. Check it out if you're curious!)`}{" "}
           <Github href="https://github.com/larislu/larislu.github.io">
             <RiGithubLine size={18} />
             GitHub

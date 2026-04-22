@@ -26,7 +26,7 @@ const Video = styled.video`
   }
 
   @media print {
-    width: 400px;
+    width: 365px;
   }
 `;
 
@@ -50,7 +50,7 @@ const ImageRow = styled.div`
   }
 
   @media print {
-    width: 800px;
+    width: 730px;
     display: block;
   }
 `;
@@ -65,7 +65,7 @@ const Image = styled.img`
   }
 
   @media print {
-    width: 400px;
+    width: 365px;
   }
 `;
 

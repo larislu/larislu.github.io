@@ -1,6 +1,7 @@
 [larislu.github.io](https://larislu.github.io/)
 
 TODOS:
+
 - [ ] make mobile nav into one that can be opened with a hamburger button (overlay? dropdown?)
 - [ ] migrate styled to css?
 - [ ] abridge resume page
@@ -15,3 +16,15 @@ TODOS:
 - [ ] display artwork as vertical on mobile
 - [ ] create jump to in resume
 - [ ] add shadow to cards
+
+To run:
+
+```
+npm start
+```
+
+To deploy:
+
+```
+npm run deploy
+```

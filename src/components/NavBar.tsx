@@ -45,9 +45,14 @@ const NavButton = styled(Link)`
   gap: 6px;
   padding-block: 18px;
   align-items: center;
+  text-decoration: none;
 
   @media (min-width: 510px) {
     flex-direction: row;
+  }
+
+  &:hover {
+    text-decoration: underline;
   }
 `;
 

@@ -1,16 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-
-const Spacer = styled.div`
-  height: 91px;
-
-  @media (min-width: 510px) {
-    height: 60px;
-  }
-`;
+import styles from "./NavBarSpacer.module.css";
 
 const NavBarSpacer = () => {
-  return <Spacer />;
+  return <div className={styles.spacer} />;
 };
 
 export default NavBarSpacer;
