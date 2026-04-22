@@ -1,5 +1,12 @@
 import React from "react";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  HashRouter,
+  Route,
+  Routes,
+  Router,
+  useSearchParams,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
@@ -10,18 +17,30 @@ import NavBar from "./components/NavBar";
 // - refreshing on a non-root page 404s
 
 function App() {
+  const [searchParams] = useSearchParams();
+
+  const renderPage = () => {
+    const page = searchParams.get("page");
+    console.log("page", page);
+    switch (page) {
+      case "/home":
+        return <Home />;
+      case "/resume":
+        return <Resume />;
+      case "/projects":
+        return <Projects />;
+      case "/artwork":
+        return <Artwork />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
-    <HashRouter>
-      <div>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/artwork" element={<Artwork />} />
-        </Routes>
-      </div>
-    </HashRouter>
+    <div>
+      <NavBar />
+      {renderPage()}
+    </div>
   );
 }
 

@@ -17,6 +17,7 @@ const Page = styled.div`
 
 const Card = styled.div`
   background-color: rgba(175, 216, 222, 0.7);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -78,7 +79,7 @@ const Projects = () => {
       <h1>my project portfolio.</h1>
       <PrintOnly>
         This is a printed PDF copy of this page. My portfolio is best viewed
-        as an website at larislu.github.io
+        as an website at LarisLu.github.io
       </PrintOnly>
       <h2>polycam design projects</h2>
       <PolycamProjects>
@@ -98,7 +99,7 @@ const Projects = () => {
           <MBot />
         </Card>
         <Footer>
-          {`(Also, one of my projects is creating this website from scratch! This page has a different experience on desktop vs mobile. It's also printable as a PDF. Check it out if you're curious!)`}{" "}
+          {`(Also, one of my projects is creating this website from scratch with React! This page has a different experience on desktop vs mobile. It's also printable as a PDF. Check it out if you're curious.)`}{" "}
           <Github href="https://github.com/larislu/larislu.github.io">
             <RiGithubLine size={18} />
             GitHub

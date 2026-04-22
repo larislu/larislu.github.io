@@ -16,7 +16,7 @@ const Artwork = () => {
   return (
     <div className={styles.page}>
       <NavBarSpacer />
-      <h1>sometimes i like to draw.</h1>
+      <h1>i like to draw.</h1>
       <div className={styles.background}>
         <div className={styles.content}>
           <h2 className={styles.header}>digital art, studies</h2>

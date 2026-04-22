@@ -18,6 +18,7 @@ const Title = styled.div`
 
 const Card = styled.div`
   background-color: rgba(175, 216, 222, 0.7);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   display: flex;
   max-width: 100%;
@@ -28,7 +29,7 @@ const Card = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2em 1em;
+  padding: 32px;
 `;
 
 const Header = styled.h2`
@@ -57,7 +58,7 @@ const Resume = () => {
         <h1>my resume.</h1>
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1avoHSKhThTpLQ0XrF4eckQkO8QgYmu39/view?usp=sharing"
+          href="https://drive.google.com/file/d/10LWTCsZbNqKGp9IX8icex26FPBN7XRQJ/view?usp=sharing"
         >
           View as PDF
         </a>
@@ -166,6 +167,7 @@ const Resume = () => {
           <span>
             Geospatial intelligence. Formerly known as Maxar Technologies.
           </span>
+          <Team>Engineering Team</Team>
           <span>Aug 2018 - Dec 2020</span>
           <List>
             <li>

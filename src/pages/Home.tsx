@@ -35,7 +35,7 @@ const Home = () => {
               <div>
                 <h1>hi! i'm larissa.</h1>
               </div>
-              <h2>engineer || designer</h2>
+              <h2 className={styles.subHeader}>engineer && designer</h2>
               <span>
                 I sit in the Venn diagram between engineering and design. My
                 passion is for making accessible products with an effortless
@@ -59,5 +59,7 @@ const Home = () => {
     </div>
   );
 };
+
+// Include companies I worked for?
 
 export default Home;

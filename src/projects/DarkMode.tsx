@@ -14,7 +14,7 @@ const DarkMode = () => {
   return (
     <>
       <ProjectImages image1={DarkModeTokens} image2={DarkModeSettings} />
-      <Content>
+      <div className={styles.content}>
         <h3 className={styles.header}>Polycam Dark Mode</h3>
         <div className={styles.text}>
           <span>
@@ -30,7 +30,7 @@ const DarkMode = () => {
             mode.
           </span>
         </div>
-      </Content>
+      </div>
     </>
   );
 };

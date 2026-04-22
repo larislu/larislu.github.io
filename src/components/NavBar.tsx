@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Routes,
+  useSearchParams,
+} from "react-router-dom";
 import styled from "styled-components";
 import {
   RiHome4Line,
@@ -7,6 +13,7 @@ import {
   RiPaletteLine,
   RiRobot2Line,
 } from "@remixicon/react";
+import styles from "./NavBar.module.css";
 
 const Links = styled.ul`
   width: 100dvw;
@@ -39,20 +46,15 @@ const Links = styled.ul`
 //   width: 100dvw;
 // `;
 
-const NavButton = styled(Link)`
+const NavButton = styled.button`
   display: flex;
   flex-direction: column;
   gap: 6px;
   padding-block: 18px;
   align-items: center;
-  text-decoration: none;
 
   @media (min-width: 510px) {
     flex-direction: row;
-  }
-
-  &:hover {
-    text-decoration: underline;
   }
 `;
 
@@ -95,19 +97,25 @@ const Info: Record<Page, PageInfo> = {
 const pages = [Page.home, Page.resume, Page.projects, Page.artwork];
 
 const NavBar = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
   return (
     <>
       <nav>
-        <Links>
+        <ul className={styles.links}>
           {pages.map((page) => (
             <li key={Info[page].name}>
-              <NavButton to={Info[page].route}>
+              <button
+                className={styles.navButton}
+                onClick={() => setSearchParams({ page: Info[page].route })}
+                disabled={searchParams.get("page") === Info[page].route}
+              >
                 {Info[page].icon}
                 {Info[page].name}
-              </NavButton>
+              </button>
             </li>
           ))}
-        </Links>
+        </ul>
       </nav>
       {/* <Gradient /> */}
     </>

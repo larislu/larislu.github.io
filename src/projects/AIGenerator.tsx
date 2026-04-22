@@ -112,7 +112,7 @@ const AIGenerator = () => {
       ) : (
         miniEmbla
       )}
-      <Content>
+      <div className={styles.content}>
         <h3 className={styles.header}>AI 3D Model Generator in Scenes</h3>
         <div className={styles.text}>
           <span>
@@ -127,7 +127,7 @@ const AIGenerator = () => {
             This led to a consistent 37.15% increase in 3D generator usage.
           </span>
         </div>
-      </Content>
+      </div>
     </>
   );
 };

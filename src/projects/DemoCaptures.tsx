@@ -14,7 +14,7 @@ const DemoCaptures = () => {
   return (
     <>
       <ProjectImages image1={DemoTooltip} image2={DemoLibrary} />
-      <Content>
+      <div className={styles.content}>
         <h3 className={styles.header}>Demo Captures</h3>
         <span>
           Polycam has a slew of features, many of them being behind a paywall.
@@ -23,7 +23,7 @@ const DemoCaptures = () => {
           few captures, one of each type. The changes are not saved and the user
           is given indication if they're using a paywalled feature.
         </span>
-      </Content>
+      </div>
     </>
   );
 };
