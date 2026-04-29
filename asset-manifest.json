@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.82d8b509.css",
-    "main.js": "/static/js/main.01243810.js",
+    "main.css": "/static/css/main.68ca7f0c.css",
+    "main.js": "/static/js/main.5c65a45c.js",
     "static/media/mbot-2.png": "/static/media/mbot-2.ce583bb3c611c94ef3db.png",
     "static/media/mbot-1.png": "/static/media/mbot-1.c2c8c929b26d921a67b5.png",
     "static/media/silksong.jpg": "/static/media/silksong.e8d89445ed25829b19b0.jpg",
@@ -17,11 +17,11 @@
     "static/media/dark-mode-settings.png": "/static/media/dark-mode-settings.0a0d331a27c5a1def90b.png",
     "static/media/dark-mode-tokens.png": "/static/media/dark-mode-tokens.77c8dc5f5bb903be78df.png",
     "index.html": "/index.html",
-    "main.82d8b509.css.map": "/static/css/main.82d8b509.css.map",
-    "main.01243810.js.map": "/static/js/main.01243810.js.map"
+    "main.68ca7f0c.css.map": "/static/css/main.68ca7f0c.css.map",
+    "main.5c65a45c.js.map": "/static/js/main.5c65a45c.js.map"
   },
   "entrypoints": [
-    "static/css/main.82d8b509.css",
-    "static/js/main.01243810.js"
+    "static/css/main.68ca7f0c.css",
+    "static/js/main.5c65a45c.js"
   ]
 }
